@@ -15,10 +15,10 @@
             </objects>
             <point key="canvasLocation" x="2124" y="1053"/>
         </scene>
-        <!--companyN-->
+        <!--company-->
         <scene sceneID="wIl-Pb-ei3">
             <objects>
-                <viewController storyboardIdentifier="companyN" title="companyN" id="xed-YO-eyO" customClass="companyViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="companyN" title="company" id="xed-YO-eyO" customClass="companyViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="klC-B7-AMI"/>
                         <viewControllerLayoutGuide type="bottom" id="KGr-if-FZU"/>
