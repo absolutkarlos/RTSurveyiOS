@@ -19,6 +19,7 @@ class formularioSlideViewController: UIPageViewController, UIPageViewControllerD
         self.delegate = self
         self.dataSource = self
         
+        
         let page1: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("companyN")
         let page2: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("contactN")
         let page3: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("siteN")
@@ -30,8 +31,14 @@ class formularioSlideViewController: UIPageViewController, UIPageViewControllerD
         pages.append(page3)
         pages.append(page4)
 
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "cambiarTituloNav:", name:"cambiarTituloNav", object: nil)
         
         setViewControllers([page1], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+    }
+    
+    func cambiarTituloNav(notification: NSNotification){
+        self.navigationItem.title = notification.object as? String
+        print("Me han chamado tio")
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {

@@ -10,6 +10,12 @@ import UIKit
 
 class companyViewController: UIViewController {
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        let titulo = "Company"
+        NSNotificationCenter.defaultCenter().postNotificationName("cambiarTituloNav", object: titulo)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

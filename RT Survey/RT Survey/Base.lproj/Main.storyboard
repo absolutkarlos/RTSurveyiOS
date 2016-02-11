@@ -10,7 +10,14 @@
         <!--Formulario Slide View Controller-->
         <scene sceneID="HZL-Zn-IPV">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZyM-pp-fS8" customClass="formularioSlideViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZyM-pp-fS8" customClass="formularioSlideViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="xed-YO-eyO" kind="show" id="2hW-cL-rTJ"/>
+                        <segue destination="9a0-KB-CKt" kind="show" id="i4S-ef-cwT"/>
+                        <segue destination="qlC-jl-CHn" kind="show" id="Gjv-15-tr9"/>
+                        <segue destination="MjL-tM-7Jl" kind="show" id="oR7-Ly-dFM"/>
+                    </connections>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2o3-Kj-I3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2124" y="1053"/>

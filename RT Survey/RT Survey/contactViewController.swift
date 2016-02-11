@@ -10,6 +10,11 @@ import UIKit
 
 class contactViewController: UIViewController {
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        let titulo = "Contact"
+        NSNotificationCenter.defaultCenter().postNotificationName("cambiarTituloNav", object: titulo)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
