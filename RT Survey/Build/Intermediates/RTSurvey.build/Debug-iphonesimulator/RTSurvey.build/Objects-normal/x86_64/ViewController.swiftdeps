@@ -1,0 +1,202 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C8RTSurvey14ViewController"
+provides-member:
+- ["C8RTSurvey14ViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- "MKMapView"
+- "CLLocation"
+- !private "mapView"
+- "CLLocationManagerDelegate"
+- "UIViewController"
+- "CLLocationManager"
+- !private "GMSCameraPosition"
+- "ViewController"
+- "CLAuthorizationStatus"
+- !private "=="
+depends-member:
+- !private ["PSs9AnyObject", "GMSCameraPosition"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "locationManager"]
+- !private ["PSs9AnyObject", "mapView"]
+- !private ["PSs9AnyObject", "mapa"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "GMSCameraPosition"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "locationManager"]
+- !private ["PSs11CVarArgType", "mapView"]
+- !private ["PSs11CVarArgType", "mapa"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "GMSCameraPosition"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "locationManager"]
+- !private ["PSs23CustomStringConvertible", "mapView"]
+- !private ["PSs23CustomStringConvertible", "mapa"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "GMSCameraPosition"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "locationManager"]
+- !private ["PSs9Equatable", "mapView"]
+- !private ["PSs9Equatable", "mapa"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "GMSCameraPosition"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "locationManager"]
+- !private ["PSs8Hashable", "mapView"]
+- !private ["PSs8Hashable", "mapa"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "GMSCameraPosition"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "locationManager"]
+- !private ["PSo8NSCoding", "mapView"]
+- !private ["PSo8NSCoding", "mapa"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "GMSCameraPosition"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "locationManager"]
+- !private ["PSo26NSExtensionRequestHandling", "mapView"]
+- !private ["PSo26NSExtensionRequestHandling", "mapa"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "CLAuthorizationStatus"]
+- ["CSo8NSObject", "CLLocation"]
+- ["CSo8NSObject", "CLLocationManager"]
+- !private ["CSo8NSObject", "GMSCameraPosition"]
+- ["CSo8NSObject", "MKMapView"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "locationManager"]
+- !private ["CSo8NSObject", "mapView"]
+- !private ["CSo8NSObject", "mapa"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "GMSCameraPosition"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "locationManager"]
+- !private ["PSo16NSObjectProtocol", "mapView"]
+- !private ["PSo16NSObjectProtocol", "mapa"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo21UIAppearanceContainer", "GMSCameraPosition"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "locationManager"]
+- !private ["PSo21UIAppearanceContainer", "mapView"]
+- !private ["PSo21UIAppearanceContainer", "mapa"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "GMSCameraPosition"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "locationManager"]
+- !private ["PSo18UIContentContainer", "mapView"]
+- !private ["PSo18UIContentContainer", "mapa"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "GMSCameraPosition"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "locationManager"]
+- !private ["PSo18UIFocusEnvironment", "mapView"]
+- !private ["PSo18UIFocusEnvironment", "mapa"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "CLAuthorizationStatus"]
+- ["CSo11UIResponder", "CLLocation"]
+- ["CSo11UIResponder", "CLLocationManager"]
+- !private ["CSo11UIResponder", "GMSCameraPosition"]
+- ["CSo11UIResponder", "MKMapView"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "locationManager"]
+- !private ["CSo11UIResponder", "mapView"]
+- !private ["CSo11UIResponder", "mapa"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "GMSCameraPosition"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "locationManager"]
+- !private ["PSo16UIStateRestoring", "mapView"]
+- !private ["PSo16UIStateRestoring", "mapa"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "GMSCameraPosition"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "locationManager"]
+- !private ["PSo18UITraitEnvironment", "mapView"]
+- !private ["PSo18UITraitEnvironment", "mapa"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "CLAuthorizationStatus"]
+- ["CSo16UIViewController", "CLLocation"]
+- ["CSo16UIViewController", "CLLocationManager"]
+- !private ["CSo16UIViewController", "GMSCameraPosition"]
+- ["CSo16UIViewController", "MKMapView"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "locationManager"]
+- !private ["CSo16UIViewController", "mapView"]
+- !private ["CSo16UIViewController", "mapa"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["C8RTSurvey14ViewController", "CLAuthorizationStatus"]
+- ["C8RTSurvey14ViewController", "CLLocation"]
+- ["C8RTSurvey14ViewController", "CLLocationManager"]
+- !private ["C8RTSurvey14ViewController", "GMSCameraPosition"]
+- ["C8RTSurvey14ViewController", "MKMapView"]
+- ["C8RTSurvey14ViewController", "deinit"]
+- ["C8RTSurvey14ViewController", "didReceiveMemoryWarning"]
+- ["C8RTSurvey14ViewController", "init"]
+- !private ["C8RTSurvey14ViewController", "locationManager"]
+- !private ["C8RTSurvey14ViewController", "mapView"]
+- !private ["C8RTSurvey14ViewController", "mapa"]
+- ["C8RTSurvey14ViewController", "viewDidLoad"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "C8RTSurvey14ViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/RTSurvey-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "7d02ac36c9f21d47f2a2d27fa2510407"

@@ -1,0 +1,85 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Global"
+- "g"
+provides-nominal:
+- "C8RTSurvey6Global"
+provides-member:
+- ["C8RTSurvey6Global", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Network"
+- !private "??"
+- "NSUserDefaults"
+- "g"
+- "Global"
+- "Cache"
+- "Auxiliares"
+depends-member:
+- !private ["PSs9AnyObject", "Auxiliares"]
+- !private ["PSs9AnyObject", "Cache"]
+- !private ["PSs9AnyObject", "Global"]
+- ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "Network"]
+- !private ["PSs9AnyObject", "aux"]
+- !private ["PSs9AnyObject", "c"]
+- !private ["PSs9AnyObject", "db"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "instance"]
+- ["PSs9AnyObject", "sharedInstance"]
+- ["PSs9AnyObject", "standardUserDefaults"]
+- ["PSs9AnyObject", ""]
+- !private ["C8RTSurvey10Auxiliares", "init"]
+- !private ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["C8RTSurvey5Cache", "init"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "standardUserDefaults"]
+- ["C8RTSurvey6Global", "Auxiliares"]
+- ["C8RTSurvey6Global", "Cache"]
+- ["C8RTSurvey6Global", "Global"]
+- ["C8RTSurvey6Global", "NSUserDefaults"]
+- ["C8RTSurvey6Global", "Network"]
+- ["C8RTSurvey6Global", "aux"]
+- ["C8RTSurvey6Global", "c"]
+- ["C8RTSurvey6Global", "db"]
+- ["C8RTSurvey6Global", "deinit"]
+- ["C8RTSurvey6Global", "init"]
+- ["C8RTSurvey6Global", "instance"]
+- ["C8RTSurvey6Global", "sharedInstance"]
+- ["C8RTSurvey6Global", "ud"]
+- !private ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "standardUserDefaults"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["C8RTSurvey7Network", "init"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "C8RTSurvey10Auxiliares"
+- "PSs11CVarArgType"
+- !private "C8RTSurvey5Cache"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "C8RTSurvey6Global"
+- "PSs8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo14NSUserDefaults"
+- !private "C8RTSurvey7Network"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/RTSurvey-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "ee93ce8d0173b2d01c26e749c8a36de0"

@@ -1,0 +1,10 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "2bbc0d162f5e314cd6e7952a14b8f385"
+build_time: [508290575, 574074000]
+inputs:
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Auxiliares.swift": !dirty [508278452, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Network.swift": !dirty [508279325, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/ViewController.swift": !dirty [508287579, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Cache.swift": !dirty [508279195, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/AppDelegate.swift": !dirty [508287356, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Global.swift": !dirty [508288262, 0]

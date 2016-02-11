@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "55d8217bee33656339989891d7b83cbc"
+build_time: [508290908, 623826000]
+inputs:
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Timeline.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Stream.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Result.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/ServerTrustPolicy.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Manager.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/ResponseSerialization.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/MultipartFormData.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Download.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Alamofire.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Response.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Error.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/ParameterEncoding.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Request.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Notifications.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Upload.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [508290863, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/Alamofire/Source/Validation.swift": [508290863, 0]

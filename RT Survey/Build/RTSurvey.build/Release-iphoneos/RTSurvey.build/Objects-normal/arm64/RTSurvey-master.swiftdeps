@@ -1,0 +1,20 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "607feac3be49381894f434eca7895c68"
+build_time: [508457896, 229439000]
+inputs:
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/celdasPrincipalTableViewCell.swift": !dirty [508437091, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Auxiliares.swift": !dirty [508293418, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Cache.swift": !dirty [508293418, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/SlideMenuController.swift": !dirty [508350090, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/formularioSlideViewController.swift": !dirty [508361049, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Network.swift": !dirty [508293418, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/buildingViewController.swift": !dirty [508358056, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/siteViewController.swift": !dirty [508358022, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/ViewController.swift": !dirty [508299649, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/contactViewController.swift": !dirty [508357987, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/navViewController.swift": !dirty [508435823, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/sideMenuViewController.swift": !dirty [508443100, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/Global.swift": !dirty [508291673, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/companyViewController.swift": !dirty [508357952, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/AppDelegate.swift": !dirty [508454804, 0]
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/RT Survey/principalTableViewController.swift": !dirty [508439562, 0]

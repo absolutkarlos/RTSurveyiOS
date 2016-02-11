@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "54017047b1e484e2d00494906d90797b"
+build_time: [508290880, 629763000]
+inputs:
+  "/Users/Idapps/Desktop/Proyectos/Panama/RTSurveyiOS/RT Survey/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [508290856, 0]
