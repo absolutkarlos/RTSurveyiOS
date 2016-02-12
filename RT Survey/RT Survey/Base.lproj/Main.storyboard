@@ -668,11 +668,98 @@
             </objects>
             <point key="canvasLocation" x="4825.5" y="1053"/>
         </scene>
+        <!--Detalle Slide View Controller-->
+        <scene sceneID="FVs-X8-DvG">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZYx-Xn-S9d" customClass="detalleSlideViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="d2M-c0-7zO" kind="show" id="OZV-BK-BRx"/>
+                        <segue destination="7rV-yF-Ch4" kind="show" id="PTq-gu-GlX"/>
+                        <segue destination="AqE-Tv-r8y" kind="show" id="YoF-fu-a5A"/>
+                        <segue destination="zTv-4l-zRC" kind="show" id="KgZ-iV-bOa"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jdc-wD-3Df" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2127" y="-405"/>
+        </scene>
+        <!--Info Detalle View Controller-->
+        <scene sceneID="DcC-Mx-tvq">
+            <objects>
+                <viewController storyboardIdentifier="infoD" id="d2M-c0-7zO" customClass="infoDetalleViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tc4-Nm-Oya"/>
+                        <viewControllerLayoutGuide type="bottom" id="FWZ-4T-LMF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sho-Vg-mjE">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.14436942338943481" green="0.97733265161514282" blue="0.0039866957813501358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Q0-ff-Z4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943" y="-405"/>
+        </scene>
+        <!--Inspeccion Detalle View Controller-->
+        <scene sceneID="8aU-5P-arz">
+            <objects>
+                <viewController storyboardIdentifier="inspeccionD" id="7rV-yF-Ch4" customClass="inspeccionDetalleViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rqk-ng-y1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="BZT-2e-AeM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWQ-X6-JDr">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RZ-dD-rJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3687" y="-405"/>
+        </scene>
+        <!--Instalacion Detalle View Controller-->
+        <scene sceneID="ydG-KH-Rg3">
+            <objects>
+                <viewController storyboardIdentifier="instalacionD" id="AqE-Tv-r8y" customClass="instalacionDetalleViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZSS-K2-jeI"/>
+                        <viewControllerLayoutGuide type="bottom" id="UzO-MW-xxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QtH-eq-mmi">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.85465473790000002" green="0.71017864750000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDi-oo-RQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4419" y="-405"/>
+        </scene>
+        <!--Fotos Detalle View Controller-->
+        <scene sceneID="K8y-cd-10D">
+            <objects>
+                <viewController storyboardIdentifier="fotosD" id="zTv-4l-zRC" customClass="fotosDetalleViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y8E-vU-h1f"/>
+                        <viewControllerLayoutGuide type="bottom" id="29a-p7-5ft"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oxr-pk-5Dl">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.69447571039199829" green="0.22234320640563965" blue="0.99702185392379761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tF-oT-bPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5145" y="-405"/>
+        </scene>
         <!--RT Survey-->
         <scene sceneID="ltB-nV-Nb6">
             <objects>
-                <tableViewController id="wT0-tK-msQ" customClass="principalTableViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="w8O-1N-AEj">
+                <tableViewController modalPresentationStyle="currentContext" id="wT0-tK-msQ" customClass="principalTableViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="w8O-1N-AEj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -680,7 +767,7 @@
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="celdaPrincipal" rowHeight="77" id="vPj-99-OEr" customClass="celdasPrincipalTableViewCell" customModule="RTSurvey" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="celdaPrincipal" rowHeight="77" id="vPj-99-OEr" customClass="celdasPrincipalTableViewCell" customModule="RTSurvey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vPj-99-OEr" id="bFG-cl-Nlf">
@@ -942,6 +1029,10 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="colorIndicador" destination="5lF-MQ-IM6" id="Zqf-1Q-1DQ"/>
@@ -953,6 +1044,7 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="wT0-tK-msQ" id="thU-mJ-ESo"/>
                             <outlet property="delegate" destination="wT0-tK-msQ" id="IFt-dw-ALJ"/>
@@ -965,9 +1057,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Dte-6A-UTw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </refreshControl>
                     <connections>
                         <outlet property="tabla" destination="w8O-1N-AEj" id="Hbq-OG-CiV"/>
                         <segue destination="a4n-Pn-Arz" kind="show" id="hMh-t1-wcm"/>
+                        <segue destination="ZYx-Xn-S9d" kind="show" identifier="bloqueDetalle" id="d2U-Kg-rNZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfM-mp-XYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
