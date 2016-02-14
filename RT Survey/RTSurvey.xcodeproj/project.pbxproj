@@ -28,6 +28,10 @@
 		3B3D6EEA1C6A686400AFBFBC /* contactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EE91C6A686400AFBFBC /* contactViewController.swift */; };
 		3B3D6EEC1C6A688600AFBFBC /* siteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EEB1C6A688600AFBFBC /* siteViewController.swift */; };
 		3B3D6EEE1C6A68A900AFBFBC /* buildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EED1C6A68A900AFBFBC /* buildingViewController.swift */; };
+		3B9E64981C7015910081A705 /* inspeccionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E64971C7015910081A705 /* inspeccionTableViewController.swift */; };
+		3B9E649C1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */; };
+		3B9E649F1C7016020081A705 /* celdaSeleccionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */; };
+		3B9E64A11C7016130081A705 /* celdaInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */; };
 		3B9E93671C69672C00A7AC22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9E93661C69672C00A7AC22 /* MapKit.framework */; };
 		3BACB1FA1C6D68A10017C045 /* infoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1F91C6D68A10017C045 /* infoDetalleViewController.swift */; };
 		3BACB1FC1C6D68C20017C045 /* inspeccionDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1FB1C6D68C20017C045 /* inspeccionDetalleViewController.swift */; };
@@ -84,6 +88,10 @@
 		3B3D6EE91C6A686400AFBFBC /* contactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactViewController.swift; sourceTree = "<group>"; };
 		3B3D6EEB1C6A688600AFBFBC /* siteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = siteViewController.swift; sourceTree = "<group>"; };
 		3B3D6EED1C6A68A900AFBFBC /* buildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buildingViewController.swift; sourceTree = "<group>"; };
+		3B9E64971C7015910081A705 /* inspeccionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspeccionTableViewController.swift; sourceTree = "<group>"; };
+		3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaSegmentadaTableViewCell.swift; sourceTree = "<group>"; };
+		3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaSeleccionTableViewCell.swift; sourceTree = "<group>"; };
+		3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaInputTableViewCell.swift; sourceTree = "<group>"; };
 		3B9E93661C69672C00A7AC22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3BACB1F91C6D68A10017C045 /* infoDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoDetalleViewController.swift; sourceTree = "<group>"; };
 		3BACB1FB1C6D68C20017C045 /* inspeccionDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspeccionDetalleViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +207,10 @@
 				3BACB1FD1C6D68E20017C045 /* instalacionDetalleViewController.swift */,
 				3BACB1FF1C6D68F70017C045 /* fotosDetalleViewController.swift */,
 				3BACB2011C6D695C0017C045 /* detalleSlideViewController.swift */,
+				3B9E64971C7015910081A705 /* inspeccionTableViewController.swift */,
+				3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */,
+				3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */,
+				3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */,
 			);
 			name = ViewControlers;
 			sourceTree = "<group>";
@@ -424,15 +436,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9E64981C7015910081A705 /* inspeccionTableViewController.swift in Sources */,
 				3B3D6EEE1C6A68A900AFBFBC /* buildingViewController.swift in Sources */,
 				3B34F8A71C69322300AD3497 /* Network.swift in Sources */,
 				3B34F8771C692B0E00AD3497 /* ViewController.swift in Sources */,
+				3B9E64A11C7016130081A705 /* celdaInputTableViewCell.swift in Sources */,
 				3B34F8A91C69325300AD3497 /* Global.swift in Sources */,
 				3BACB2001C6D68F70017C045 /* fotosDetalleViewController.swift in Sources */,
 				3BACB2021C6D695C0017C045 /* detalleSlideViewController.swift in Sources */,
+				3B9E649F1C7016020081A705 /* celdaSeleccionTableViewCell.swift in Sources */,
 				3B34F8751C692B0E00AD3497 /* AppDelegate.swift in Sources */,
 				3BACB1FC1C6D68C20017C045 /* inspeccionDetalleViewController.swift in Sources */,
 				3B34F8A51C6931EE00AD3497 /* Cache.swift in Sources */,
+				3B9E649C1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift in Sources */,
 				3BACB1FA1C6D68A10017C045 /* infoDetalleViewController.swift in Sources */,
 				3B3D6EE21C6A502200AFBFBC /* celdasPrincipalTableViewCell.swift in Sources */,
 				3B3D6EE61C6A661300AFBFBC /* formularioSlideViewController.swift in Sources */,
