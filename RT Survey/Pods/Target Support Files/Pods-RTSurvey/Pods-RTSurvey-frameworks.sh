@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-RTSurvey/Alamofire.framework"
+  install_framework "Pods-RTSurvey/DKImagePickerController.framework"
   install_framework "Pods-RTSurvey/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-RTSurvey/Alamofire.framework"
+  install_framework "Pods-RTSurvey/DKImagePickerController.framework"
   install_framework "Pods-RTSurvey/SwiftyJSON.framework"
 fi

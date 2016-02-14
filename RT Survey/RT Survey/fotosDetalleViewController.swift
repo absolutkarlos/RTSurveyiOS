@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DKImagePickerController
 
 class fotosDetalleViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -15,7 +16,43 @@ class fotosDetalleViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var seleccionarFotos: UIButton!
     @IBOutlet weak var borrarFotos: UIButton!
     
-    let imagePicker = UIImagePickerController()
+    let pickerController = DKImagePickerController()
+    
+    /// Forces selection of tapped image immediatly.
+    internal var singleSelect = false
+    
+    internal var maxSelectableCount = 999
+    
+   
+    /// Set the showsEmptyAlbums to specify whether or not the empty albums is shown in the picker.
+    internal var showsEmptyAlbums = true
+    
+    /// The type of picker interface to be displayed by the controller.
+    internal var assetType: DKImagePickerControllerAssetType = .AllAssets
+    
+    /// If sourceType is Camera will cause the assetType & maxSelectableCount & allowMultipleTypes & defaultSelectedAssets to be ignored.
+    internal var sourceType: DKImagePickerControllerSourceType = [.Camera, .Photo]
+    
+    /// Whether allows to select photos and videos at the same time.
+    internal var allowMultipleTypes = true
+    
+    /// If YES, and the requested image is not stored on the local device, the Picker downloads the image from iCloud.
+    internal var autoDownloadWhenAssetIsInCloud = true
+    
+    /// Determines whether or not the rotation is enabled.
+    internal var allowsLandscape = false
+    
+    /// The callback block is executed when user pressed the cancel button.
+    internal var didCancel: (() -> Void)?
+    internal var showsCancelButton = false
+    
+    /// The callback block is executed when user pressed the select button.
+    internal var didSelectAssets: ((assets: [DKAsset]) -> Void)?
+    
+    /// It will have selected the specific assets.
+    internal var defaultSelectedAssets: [DKAsset]?
+    
+    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
@@ -26,8 +63,6 @@ class fotosDetalleViewController: UIViewController, UIImagePickerControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imagePicker.delegate = self
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,20 +81,13 @@ class fotosDetalleViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     func abrirGaleria(alert: UIAlertAction!){
-        if UIImagePickerController.availableMediaTypesForSourceType(.PhotoLibrary) != nil {
-            imagePicker.allowsEditing = false
-            imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-            presentViewController(imagePicker, animated: true, completion: nil)
-        } else {
-            noCamera()
+        pickerController.didSelectAssets = { (assets: [DKAsset]) in
+            print("didSelectAssets")
+            print(assets)
         }
         
-    }
-    func noCamera(){
-        let alertVC = UIAlertController(title: "No Camera", message: "Sorry, Gallery is not accessible.", preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "OK", style:.Default, handler: nil)
-        alertVC.addAction(okAction)
-        presentViewController(alertVC, animated: true, completion: nil)
+        self.presentViewController(pickerController, animated: true) {}
+        
     }
     
     //MARK: - Delegates

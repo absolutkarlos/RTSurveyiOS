@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DKImagePickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RTSurvey.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1264598589903BF3B5FB40B46A665194</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2419EB2E283D5E12618D87970B70F3A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8151B8C9AD826D3D278334C18AB94560</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A4AC66C2F52BB69929EB16B48481B237</key>
+		<key>AB7E8B21BB490DD03324163F0E545A27</key>
 		<dict>
 			<key>primary</key>
 			<true/>
