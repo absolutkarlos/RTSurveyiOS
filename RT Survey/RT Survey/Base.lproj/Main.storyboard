@@ -1428,9 +1428,112 @@
                     <view key="view" contentMode="scaleToFill" id="oxr-pk-5Dl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymP-pG-EwL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="8Br-O1-aiO"/>
+                                </constraints>
+                                <state key="normal" title="Seleccionar Fotos"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Br-O1-aiO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8Br-O1-aiO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="seleccionarFoto:" destination="zTv-4l-zRC" eventType="touchUpInside" id="eXl-HI-zBW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-Tc-oAA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Borrar Selección"/>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-5Z-aaq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E3x-sC-W3l">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="F7n-mQ-taj">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.69447571039199829" green="0.22234320640563965" blue="0.99702185392379761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ymP-pG-EwL" secondAttribute="bottom" constant="20" symbolic="YES" id="B8c-JS-uIt"/>
+                            <constraint firstItem="ymP-pG-EwL" firstAttribute="top" secondItem="g5a-5Z-aaq" secondAttribute="bottom" constant="8" symbolic="YES" id="K9B-5k-E7I"/>
+                            <constraint firstItem="g5a-5Z-aaq" firstAttribute="top" secondItem="y8E-vU-h1f" secondAttribute="bottom" constant="8" symbolic="YES" id="KN6-t3-WYp"/>
+                            <constraint firstItem="ymP-pG-EwL" firstAttribute="leading" secondItem="g5a-5Z-aaq" secondAttribute="leading" id="MjO-lN-VvH"/>
+                            <constraint firstItem="9Ag-Tc-oAA" firstAttribute="baseline" secondItem="ymP-pG-EwL" secondAttribute="baseline" id="UqY-xd-RYK"/>
+                            <constraint firstItem="g5a-5Z-aaq" firstAttribute="trailing" secondItem="9Ag-Tc-oAA" secondAttribute="trailing" id="nxp-j3-D8l"/>
+                            <constraint firstItem="g5a-5Z-aaq" firstAttribute="leading" secondItem="oxr-pk-5Dl" secondAttribute="leadingMargin" id="r5S-mj-bXF"/>
+                            <constraint firstItem="9Ag-Tc-oAA" firstAttribute="leading" secondItem="ymP-pG-EwL" secondAttribute="trailing" constant="10" id="vIM-XT-1ur"/>
+                            <constraint firstItem="g5a-5Z-aaq" firstAttribute="trailing" secondItem="oxr-pk-5Dl" secondAttribute="trailingMargin" id="xZA-OJ-XIC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ymP-pG-EwL"/>
+                                <exclude reference="9Ag-Tc-oAA"/>
+                                <exclude reference="g5a-5Z-aaq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="KN6-t3-WYp"/>
+                                <exclude reference="nxp-j3-D8l"/>
+                                <exclude reference="r5S-mj-bXF"/>
+                                <exclude reference="xZA-OJ-XIC"/>
+                                <exclude reference="B8c-JS-uIt"/>
+                                <exclude reference="K9B-5k-E7I"/>
+                                <exclude reference="MjO-lN-VvH"/>
+                                <exclude reference="UqY-xd-RYK"/>
+                                <exclude reference="vIM-XT-1ur"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ymP-pG-EwL"/>
+                                <include reference="9Ag-Tc-oAA"/>
+                                <include reference="g5a-5Z-aaq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="KN6-t3-WYp"/>
+                                <include reference="nxp-j3-D8l"/>
+                                <include reference="r5S-mj-bXF"/>
+                                <include reference="xZA-OJ-XIC"/>
+                                <include reference="B8c-JS-uIt"/>
+                                <include reference="K9B-5k-E7I"/>
+                                <include reference="MjO-lN-VvH"/>
+                                <include reference="UqY-xd-RYK"/>
+                                <include reference="vIM-XT-1ur"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="borrarFotos" destination="9Ag-Tc-oAA" id="8jF-4q-buc"/>
+                        <outlet property="fotoGrid" destination="g5a-5Z-aaq" id="N73-3b-thd"/>
+                        <outlet property="seleccionarFotos" destination="ymP-pG-EwL" id="Wse-JY-GEP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tF-oT-bPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
