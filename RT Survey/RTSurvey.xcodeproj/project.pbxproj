@@ -39,6 +39,7 @@
 		3BACB2001C6D68F70017C045 /* fotosDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1FF1C6D68F70017C045 /* fotosDetalleViewController.swift */; };
 		3BACB2021C6D695C0017C045 /* detalleSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB2011C6D695C0017C045 /* detalleSlideViewController.swift */; };
 		3BB968F61C6BE72A00F243B9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BB968F51C6BE72A00F243B9 /* Info.plist */; };
+		3BF06C201C7253660059EC63 /* fotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF06C1F1C7253650059EC63 /* fotoCollectionViewCell.swift */; };
 		61C2C1634564CD837243DB8D /* Pods_RTSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E480A6803E46D60A87FBC8 /* Pods_RTSurvey.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		3BACB1FF1C6D68F70017C045 /* fotosDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fotosDetalleViewController.swift; sourceTree = "<group>"; };
 		3BACB2011C6D695C0017C045 /* detalleSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detalleSlideViewController.swift; sourceTree = "<group>"; };
 		3BB968F51C6BE72A00F243B9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF06C1F1C7253650059EC63 /* fotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B27733B0332E92BC04556DF /* Pods-RTSurvey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTSurvey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTSurvey/Pods-RTSurvey.debug.xcconfig"; sourceTree = "<group>"; };
 		7FF3E42F83853FD0A69B2C22 /* Pods-RTSurvey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTSurvey.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTSurvey/Pods-RTSurvey.release.xcconfig"; sourceTree = "<group>"; };
 		A3E480A6803E46D60A87FBC8 /* Pods_RTSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */,
 				3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */,
 				3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */,
+				3BF06C1F1C7253650059EC63 /* fotoCollectionViewCell.swift */,
 			);
 			name = ViewControlers;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF06C201C7253660059EC63 /* fotoCollectionViewCell.swift in Sources */,
 				3B9E64981C7015910081A705 /* inspeccionTableViewController.swift in Sources */,
 				3B3D6EEE1C6A68A900AFBFBC /* buildingViewController.swift in Sources */,
 				3B34F8A71C69322300AD3497 /* Network.swift in Sources */,
