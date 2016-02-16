@@ -7,9 +7,18 @@
 //
 
 import UIKit
+import MapKit
 
-class siteViewController: UIViewController {
+class siteViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    @IBOutlet weak var latitud: UITextField!
+    @IBOutlet weak var longitud: UITextField!
+    @IBOutlet var mapa: MKMapView!
+
+    var locManager: CLLocationManager!
+    var location: CLLocation!
+    let regionRadius: CLLocationDistance = 1000
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         let titulo = "Site"
@@ -18,16 +27,48 @@ class siteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Setup our Location Manager
+        locManager = CLLocationManager()
+        locManager.delegate = self
+        locManager.desiredAccuracy = kCLLocationAccuracyBest
+        locManager.requestAlwaysAuthorization()
+        locManager.startUpdatingLocation()
+        
+        //Setup our Map View
+        mapa.delegate = self
+        mapa.mapType = MKMapType.Satellite
+        mapa.showsUserLocation = true
 
-        // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(true)
+        locManager.stopUpdatingLocation()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+            regionRadius * 2.0, regionRadius * 2.0)
+        mapa.setRegion(coordinateRegion, animated: true)
+    }
 
+   
+    // MARK: - Mapas
+    func mapView(mapView: MKMapView, didUpdateUserLocation
+        userLocation: MKUserLocation) {
+            mapa.centerCoordinate = userLocation.location!.coordinate
+            centerMapOnLocation(userLocation.location!)
+            latitud.text = String(userLocation.location!.coordinate.latitude)
+            longitud.text = String(userLocation.location!.coordinate.longitude)
+    }
+    
     /*
     // MARK: - Navigation
 

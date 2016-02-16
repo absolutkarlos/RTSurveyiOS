@@ -401,6 +401,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="latitud" destination="sLQ-LJ-R0L" id="tXJ-xz-HT9"/>
+                        <outlet property="longitud" destination="Wq4-ZD-cnC" id="4qw-NP-HQk"/>
+                        <outlet property="mapa" destination="bba-sQ-PsM" id="shx-GE-WT4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUn-wQ-0bQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
