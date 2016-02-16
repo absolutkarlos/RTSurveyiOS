@@ -28,6 +28,7 @@
 		3B3D6EEA1C6A686400AFBFBC /* contactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EE91C6A686400AFBFBC /* contactViewController.swift */; };
 		3B3D6EEC1C6A688600AFBFBC /* siteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EEB1C6A688600AFBFBC /* siteViewController.swift */; };
 		3B3D6EEE1C6A68A900AFBFBC /* buildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EED1C6A68A900AFBFBC /* buildingViewController.swift */; };
+		3B812A481C736CE400288E0D /* celdaContadorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812A471C736CE400288E0D /* celdaContadorTableViewCell.swift */; };
 		3B9E64981C7015910081A705 /* inspeccionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E64971C7015910081A705 /* inspeccionTableViewController.swift */; };
 		3B9E649C1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */; };
 		3B9E649F1C7016020081A705 /* celdaSeleccionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */; };
@@ -38,7 +39,6 @@
 		3BACB1FE1C6D68E20017C045 /* instalacionDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1FD1C6D68E20017C045 /* instalacionDetalleViewController.swift */; };
 		3BACB2001C6D68F70017C045 /* fotosDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1FF1C6D68F70017C045 /* fotosDetalleViewController.swift */; };
 		3BACB2021C6D695C0017C045 /* detalleSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB2011C6D695C0017C045 /* detalleSlideViewController.swift */; };
-		3BB968F61C6BE72A00F243B9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BB968F51C6BE72A00F243B9 /* Info.plist */; };
 		3BF06C201C7253660059EC63 /* fotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF06C1F1C7253650059EC63 /* fotoCollectionViewCell.swift */; };
 		61C2C1634564CD837243DB8D /* Pods_RTSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E480A6803E46D60A87FBC8 /* Pods_RTSurvey.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +89,7 @@
 		3B3D6EE91C6A686400AFBFBC /* contactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactViewController.swift; sourceTree = "<group>"; };
 		3B3D6EEB1C6A688600AFBFBC /* siteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = siteViewController.swift; sourceTree = "<group>"; };
 		3B3D6EED1C6A68A900AFBFBC /* buildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buildingViewController.swift; sourceTree = "<group>"; };
+		3B812A471C736CE400288E0D /* celdaContadorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaContadorTableViewCell.swift; sourceTree = "<group>"; };
 		3B9E64971C7015910081A705 /* inspeccionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspeccionTableViewController.swift; sourceTree = "<group>"; };
 		3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaSegmentadaTableViewCell.swift; sourceTree = "<group>"; };
 		3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaSeleccionTableViewCell.swift; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 				3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */,
 				3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */,
 				3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */,
+				3B812A471C736CE400288E0D /* celdaContadorTableViewCell.swift */,
 				3BF06C1F1C7253650059EC63 /* fotoCollectionViewCell.swift */,
 			);
 			name = ViewControlers;
@@ -365,7 +367,6 @@
 			files = (
 				3B34F87F1C692B1000AD3497 /* LaunchScreen.storyboard in Resources */,
 				3B34F87C1C692B1000AD3497 /* Assets.xcassets in Resources */,
-				3BB968F61C6BE72A00F243B9 /* Info.plist in Resources */,
 				3B34F87A1C692B0F00AD3497 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +463,7 @@
 				3B3D6EDE1C6A468400AFBFBC /* sideMenuViewController.swift in Sources */,
 				3B3D6EEA1C6A686400AFBFBC /* contactViewController.swift in Sources */,
 				3B3D6EDA1C6A457100AFBFBC /* navViewController.swift in Sources */,
+				3B812A481C736CE400288E0D /* celdaContadorTableViewCell.swift in Sources */,
 				3B3D6EE41C6A531C00AFBFBC /* principalTableViewController.swift in Sources */,
 				3B3D6EE81C6A684100AFBFBC /* companyViewController.swift in Sources */,
 				3B34F8A31C69318D00AD3497 /* Auxiliares.swift in Sources */,
