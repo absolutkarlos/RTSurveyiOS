@@ -28,6 +28,7 @@
 		3B3D6EEA1C6A686400AFBFBC /* contactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EE91C6A686400AFBFBC /* contactViewController.swift */; };
 		3B3D6EEC1C6A688600AFBFBC /* siteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EEB1C6A688600AFBFBC /* siteViewController.swift */; };
 		3B3D6EEE1C6A68A900AFBFBC /* buildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D6EED1C6A68A900AFBFBC /* buildingViewController.swift */; };
+		3B6216D61C74FF1C00F3DE47 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6216D51C74FF1C00F3DE47 /* loginViewController.swift */; };
 		3B812A481C736CE400288E0D /* celdaContadorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812A471C736CE400288E0D /* celdaContadorTableViewCell.swift */; };
 		3B9E64981C7015910081A705 /* inspeccionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E64971C7015910081A705 /* inspeccionTableViewController.swift */; };
 		3B9E649C1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */; };
@@ -89,6 +90,7 @@
 		3B3D6EE91C6A686400AFBFBC /* contactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactViewController.swift; sourceTree = "<group>"; };
 		3B3D6EEB1C6A688600AFBFBC /* siteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = siteViewController.swift; sourceTree = "<group>"; };
 		3B3D6EED1C6A68A900AFBFBC /* buildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buildingViewController.swift; sourceTree = "<group>"; };
+		3B6216D51C74FF1C00F3DE47 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		3B812A471C736CE400288E0D /* celdaContadorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaContadorTableViewCell.swift; sourceTree = "<group>"; };
 		3B9E64971C7015910081A705 /* inspeccionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspeccionTableViewController.swift; sourceTree = "<group>"; };
 		3B9E649B1C7015E80081A705 /* celdaSegmentadaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaSegmentadaTableViewCell.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */,
 				3B812A471C736CE400288E0D /* celdaContadorTableViewCell.swift */,
 				3BF06C1F1C7253650059EC63 /* fotoCollectionViewCell.swift */,
+				3B6216D51C74FF1C00F3DE47 /* loginViewController.swift */,
 			);
 			name = ViewControlers;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6216D61C74FF1C00F3DE47 /* loginViewController.swift in Sources */,
 				3BF06C201C7253660059EC63 /* fotoCollectionViewCell.swift in Sources */,
 				3B9E64981C7015910081A705 /* inspeccionTableViewController.swift in Sources */,
 				3B3D6EEE1C6A68A900AFBFBC /* buildingViewController.swift in Sources */,
