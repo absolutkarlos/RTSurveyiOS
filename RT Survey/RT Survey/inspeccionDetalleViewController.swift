@@ -10,6 +10,7 @@ import UIKit
 
 class inspeccionDetalleViewController: UIViewController {
 
+    @IBOutlet var contenedor: UIView!
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         let titulo = "Inspección"
@@ -19,7 +20,8 @@ class inspeccionDetalleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
+        contenedor.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {

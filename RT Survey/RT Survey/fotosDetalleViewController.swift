@@ -56,6 +56,8 @@ class fotosDetalleViewController: UIViewController, UIImagePickerControllerDeleg
         super.viewDidLoad()
         fotoGrid.dataSource = self
         fotoGrid.delegate = self
+        self.view.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
+        self.fotoGrid.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
         
     }
 

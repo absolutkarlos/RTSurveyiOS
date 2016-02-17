@@ -12,6 +12,7 @@
         <scene sceneID="HZL-Zn-IPV">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZyM-pp-fS8" customClass="formularioSlideViewController" customModule="RTSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <keyCommands/>
                     <connections>
                         <segue destination="xed-YO-eyO" kind="show" id="2hW-cL-rTJ"/>
                         <segue destination="9a0-KB-CKt" kind="show" id="i4S-ef-cwT"/>
@@ -528,7 +529,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MN-9K-X5a">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Guardar"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <animations/>
@@ -1101,7 +1104,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTY-V1-4ut">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Día" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTY-V1-4ut">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1114,6 +1117,7 @@
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="365" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-4D-fUC">
                                             <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                             <animations/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                                 <rect key="frame" x="138" y="47" width="94" height="29"/>
                                             </variation>
@@ -1338,6 +1342,7 @@
                                         </label>
                                     </subviews>
                                     <animations/>
+                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="g85-cH-Qj7" firstAttribute="top" secondItem="iQ9-ke-HMh" secondAttribute="bottom" constant="8" symbolic="YES" id="Jp5-G4-zrR"/>
                                         <constraint firstItem="g85-cH-Qj7" firstAttribute="leading" secondItem="o3f-TD-vXi" secondAttribute="leadingMargin" id="MIw-mx-T7Z"/>
@@ -1684,6 +1689,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="contenedor" destination="D1Y-z4-iOd" id="Udv-mB-blD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RZ-dD-rJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1701,7 +1709,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" red="0.85465473790000002" green="0.71017864750000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDi-oo-RQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1726,7 +1734,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="8Br-O1-aiO"/>
                                 </constraints>
-                                <state key="normal" title="Seleccionar Fotos"/>
+                                <state key="normal" title="Seleccionar Fotos">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="8Br-O1-aiO"/>
@@ -1744,7 +1754,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-Tc-oAA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Borrar Selección"/>
+                                <state key="normal" title="Borrar Selección">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="borrarSeleccion:" destination="zTv-4l-zRC" eventType="touchUpInside" id="6F3-2w-b7K"/>
                                 </connections>

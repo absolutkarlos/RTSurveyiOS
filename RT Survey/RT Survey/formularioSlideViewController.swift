@@ -19,6 +19,11 @@ class formularioSlideViewController: UIPageViewController, UIPageViewControllerD
         self.delegate = self
         self.dataSource = self
         
+        self.view.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
+        
+        let pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
+        pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
         
         let page1: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("companyN")
         let page2: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("contactN")

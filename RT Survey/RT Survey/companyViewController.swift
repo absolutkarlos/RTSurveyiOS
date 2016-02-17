@@ -18,8 +18,7 @@ class companyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {

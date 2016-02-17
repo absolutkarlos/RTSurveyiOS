@@ -28,6 +28,8 @@ class siteViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
+        
         //Setup our Location Manager
         locManager = CLLocationManager()
         locManager.delegate = self
