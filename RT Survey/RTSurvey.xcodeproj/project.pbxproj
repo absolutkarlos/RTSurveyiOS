@@ -35,6 +35,7 @@
 		3B9E649F1C7016020081A705 /* celdaSeleccionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */; };
 		3B9E64A11C7016130081A705 /* celdaInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */; };
 		3B9E93671C69672C00A7AC22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9E93661C69672C00A7AC22 /* MapKit.framework */; };
+		3BA03DA71C7788B200B0F200 /* puenteGoogleMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA03DA61C7788B200B0F200 /* puenteGoogleMaps.m */; };
 		3BACB1FA1C6D68A10017C045 /* infoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1F91C6D68A10017C045 /* infoDetalleViewController.swift */; };
 		3BACB1FC1C6D68C20017C045 /* inspeccionDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1FB1C6D68C20017C045 /* inspeccionDetalleViewController.swift */; };
 		3BACB1FE1C6D68E20017C045 /* instalacionDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACB1FD1C6D68E20017C045 /* instalacionDetalleViewController.swift */; };
@@ -97,6 +98,8 @@
 		3B9E649E1C7016020081A705 /* celdaSeleccionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaSeleccionTableViewCell.swift; sourceTree = "<group>"; };
 		3B9E64A01C7016130081A705 /* celdaInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaInputTableViewCell.swift; sourceTree = "<group>"; };
 		3B9E93661C69672C00A7AC22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3BA03DA51C7788B000B0F200 /* RTSurvey-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTSurvey-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BA03DA61C7788B200B0F200 /* puenteGoogleMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = puenteGoogleMaps.m; sourceTree = "<group>"; };
 		3BACB1F91C6D68A10017C045 /* infoDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoDetalleViewController.swift; sourceTree = "<group>"; };
 		3BACB1FB1C6D68C20017C045 /* inspeccionDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspeccionDetalleViewController.swift; sourceTree = "<group>"; };
 		3BACB1FD1C6D68E20017C045 /* instalacionDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instalacionDetalleViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 				3B34F8A61C69322300AD3497 /* Network.swift */,
 				3B34F8A81C69325300AD3497 /* Global.swift */,
 				3B3D6EDF1C6A47A200AFBFBC /* SlideMenuController.swift */,
+				3BA03DA61C7788B200B0F200 /* puenteGoogleMaps.m */,
+				3BA03DA51C7788B000B0F200 /* RTSurvey-Bridging-Header.h */,
 			);
 			name = Clases;
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 				3B3D6EDA1C6A457100AFBFBC /* navViewController.swift in Sources */,
 				3B812A481C736CE400288E0D /* celdaContadorTableViewCell.swift in Sources */,
 				3B3D6EE41C6A531C00AFBFBC /* principalTableViewController.swift in Sources */,
+				3BA03DA71C7788B200B0F200 /* puenteGoogleMaps.m in Sources */,
 				3B3D6EE81C6A684100AFBFBC /* companyViewController.swift in Sources */,
 				3B34F8A31C69318D00AD3497 /* Auxiliares.swift in Sources */,
 			);
@@ -626,7 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "IA.RT-Survey";
 				PRODUCT_NAME = RTSurvey;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RT Survey/RTSurvey-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -648,7 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "IA.RT-Survey";
 				PRODUCT_NAME = RTSurvey;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RT Survey/RTSurvey-Bridging-Header.h";
 			};
 			name = Release;
 		};

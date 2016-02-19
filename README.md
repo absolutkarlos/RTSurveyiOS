@@ -1,4 +1,5 @@
 # RTSurveyiOS
 
-/Pods/
-/Build/
+Instalar las dependencias Pod
+
+pod install --no-repo-update --verbose

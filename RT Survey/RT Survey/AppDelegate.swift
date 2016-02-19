@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreLocation
 //import Fabric
 //import Crashlytics
 
@@ -17,15 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let googleMapsApiKey = "AIzaSyAq00oObxGE7LDjpJ6wfNlNh-Tnn8stFDo"
     
-    var locationManager: CLLocationManager?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Estadiscticas con Fabric
         //Fabric.with([Crashlytics()])
         
-        
-        locationManager = CLLocationManager()
-        locationManager?.requestWhenInUseAuthorization()
+        GMSServices.provideAPIKey(googleMapsApiKey)
         
         // Montar vistas de Inicio
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
