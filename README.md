@@ -1,0 +1,4 @@
+# RTSurveyiOS
+
+/Pods/
+/Build/
