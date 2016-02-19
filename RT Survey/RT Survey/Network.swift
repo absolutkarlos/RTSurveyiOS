@@ -61,8 +61,9 @@ class Network: NSObject {
     func post(uri: String,parametros: [String: AnyObject], callback: (JSON)->Void)
     {
         let url = NSURL(string: baseURL)
+        print(parametros,header)
         
-        self.alamo!.request(.POST, (url?.URLByAppendingPathComponent(uri))!, headers: header, parameters:parametros, encoding:.JSON).responseJSON { response in
+        self.alamo!.request(.POST, (url?.URLByAppendingPathComponent(uri))!, headers: header, parameters:parametros, encoding:.URL).responseJSON { response in
             /*   if(response.result == nil)
             {
             callback(nil)
@@ -76,6 +77,7 @@ class Network: NSObject {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
+                    callback(json)
                     print("JSON: \(json)")
                 }
             case .Failure(let error):
@@ -101,6 +103,7 @@ class Network: NSObject {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
+                    callback(json)
                     print("JSON: \(json)")
                 }
             case .Failure(let error):
@@ -126,6 +129,7 @@ class Network: NSObject {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
+                    callback(json)
                     print("JSON: \(json)")
                 }
             case .Failure(let error):
@@ -151,6 +155,7 @@ class Network: NSObject {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
+                    callback(json)
                     print("JSON: \(json)")
                 }
             case .Failure(let error):
@@ -177,6 +182,7 @@ class Network: NSObject {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
+                    callback(json)
                     print("JSON: \(json)")
                 }
             case .Failure(let error):
