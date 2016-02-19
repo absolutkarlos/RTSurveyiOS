@@ -12,12 +12,17 @@ class contactViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
+        
         let titulo = "Contact"
         NSNotificationCenter.defaultCenter().postNotificationName("cambiarTituloNav", object: titulo)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +30,10 @@ class contactViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func dismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        self.view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
