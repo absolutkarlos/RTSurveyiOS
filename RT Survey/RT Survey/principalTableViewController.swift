@@ -17,9 +17,10 @@ class principalTableViewController: UITableViewController {
         
         if (g.ud.stringForKey("Token") == nil)
         {
-            let login = self.storyboard!.instantiateViewControllerWithIdentifier("login") as! loginViewController
-            self.presentViewController(login, animated: true, completion: nil)
+            //let login = self.storyboard!.instantiateViewControllerWithIdentifier("login") as! loginViewController
+            //self.presentViewController(login, animated: true, completion: nil)
             //self.navigationController?.pushViewController(login, animated: true)
+
         }
     }
     

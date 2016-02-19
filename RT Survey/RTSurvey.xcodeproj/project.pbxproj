@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3B34F8751C692B0E00AD3497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34F8741C692B0E00AD3497 /* AppDelegate.swift */; };
-		3B34F8771C692B0E00AD3497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34F8761C692B0E00AD3497 /* ViewController.swift */; };
 		3B34F87A1C692B0F00AD3497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B34F8781C692B0F00AD3497 /* Main.storyboard */; };
 		3B34F87C1C692B1000AD3497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B34F87B1C692B1000AD3497 /* Assets.xcassets */; };
 		3B34F87F1C692B1000AD3497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B34F87D1C692B1000AD3497 /* LaunchScreen.storyboard */; };
@@ -67,7 +66,6 @@
 		3B1636FB1C69690A00C0C9CE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3B34F8711C692B0D00AD3497 /* RTSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B34F8741C692B0E00AD3497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B34F8761C692B0E00AD3497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B34F8791C692B0F00AD3497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B34F87B1C692B1000AD3497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B34F87E1C692B1000AD3497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				3B34F8AC1C69334F00AD3497 /* Clases */,
 				3B34F8AA1C69332100AD3497 /* ViewControlers */,
 				3B34F8741C692B0E00AD3497 /* AppDelegate.swift */,
-				3B34F8761C692B0E00AD3497 /* ViewController.swift */,
 				3B34F8781C692B0F00AD3497 /* Main.storyboard */,
 				3B34F87B1C692B1000AD3497 /* Assets.xcassets */,
 				3B34F87D1C692B1000AD3497 /* LaunchScreen.storyboard */,
@@ -453,7 +450,6 @@
 				3B9E64981C7015910081A705 /* inspeccionTableViewController.swift in Sources */,
 				3B3D6EEE1C6A68A900AFBFBC /* buildingViewController.swift in Sources */,
 				3B34F8A71C69322300AD3497 /* Network.swift in Sources */,
-				3B34F8771C692B0E00AD3497 /* ViewController.swift in Sources */,
 				3B9E64A11C7016130081A705 /* celdaInputTableViewCell.swift in Sources */,
 				3B34F8A91C69325300AD3497 /* Global.swift in Sources */,
 				3BACB2001C6D68F70017C045 /* fotosDetalleViewController.swift in Sources */,

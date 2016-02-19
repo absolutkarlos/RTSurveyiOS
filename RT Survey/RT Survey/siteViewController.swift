@@ -9,15 +9,14 @@
 import UIKit
 import MapKit
 
-class siteViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class siteViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var latitud: UITextField!
     @IBOutlet weak var longitud: UITextField!
-    @IBOutlet var mapa: MKMapView!
-
+    @IBOutlet var mapa: GMSMapView!
+    
     var locManager: CLLocationManager!
-    var location: CLLocation!
-    let regionRadius: CLLocationDistance = 1000
+    let marker = GMSMarker()
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
@@ -28,20 +27,20 @@ class siteViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = g.aux.UIColorFromRGB("f2f2f2", alpha: 1)
+        mapa.delegate = self
+        mapa.myLocationEnabled = true
+        mapa.settings.myLocationButton = true
+        mapa.settings.zoomGestures = true
         
-        //Setup our Location Manager
+        
         locManager = CLLocationManager()
         locManager.delegate = self
+        locManager.requestWhenInUseAuthorization()
         locManager.desiredAccuracy = kCLLocationAccuracyBest
         locManager.requestAlwaysAuthorization()
         locManager.startUpdatingLocation()
         
-        //Setup our Map View
-        mapa.delegate = self
-        mapa.mapType = MKMapType.Satellite
-        mapa.showsUserLocation = true
-
+        
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -51,34 +50,41 @@ class siteViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func mapView(mapView: GMSMapView!, willMove gesture: Bool) {
+        mapa.clear()
+    }
+    
+    func mapView(mapView: GMSMapView!, idleAtCameraPosition cameraPosition: GMSCameraPosition!) {
+        let geocoder = GMSGeocoder()
+        let handler = { (response : GMSReverseGeocodeResponse!, error: NSError!) -> Void in
+            if let result = response.firstResult() {
+                
+                self.marker.position = cameraPosition.target
+                self.marker.title = result.lines[0] as! String
+                self.marker.snippet = result.lines[1] as! String
+                self.marker.map = self.mapa
+                
+                self.latitud.text = String(cameraPosition.target.latitude)
+                self.longitud.text = String(cameraPosition.target.longitude)
+            }
+        }
+        geocoder.reverseGeocodeCoordinate(cameraPosition.target, completionHandler: handler)
     }
     
     
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-            regionRadius * 2.0, regionRadius * 2.0)
-        mapa.setRegion(coordinateRegion, animated: true)
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            
+            //mapa.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            
+            self.marker.position = location.coordinate
+            self.marker.appearAnimation = kGMSMarkerAnimationPop
+            self.marker.map = mapa
+            locManager.stopUpdatingLocation()
+            
+        }
+        
     }
-
-   
-    // MARK: - Mapas
-    func mapView(mapView: MKMapView, didUpdateUserLocation
-        userLocation: MKUserLocation) {
-            mapa.centerCoordinate = userLocation.location!.coordinate
-            centerMapOnLocation(userLocation.location!)
-            latitud.text = String(userLocation.location!.coordinate.latitude)
-            longitud.text = String(userLocation.location!.coordinate.longitude)
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
