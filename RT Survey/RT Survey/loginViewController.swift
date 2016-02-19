@@ -37,14 +37,10 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         
         var parametros : [String:String!]!
         parametros = ["UserName":usuario.text,"Password":password.text,"grant_type":"password"]
-        
-        g.db.get(g.db.action, callback: {
-            json in print(json)
-        })
+
         g.db.post(g.db.login, parametros: parametros, callback: {
             json in
-            
-            print(json)
+
             
             let userId = json["userId"] //Long
             let token_type = json["token_type"] //String
@@ -52,20 +48,27 @@ class loginViewController: UIViewController, UITextFieldDelegate {
             let expires_in = json["expires_in"] //Miliseconds
             let issued = json[".issued"] //DateTime
             let expires = json[".expires"] //DateTime
-            let remember = json["remember"] //Boolean
-            let grant_type = json["grant_type"] //String
             
-
             
             if(token != nil)
             {
-                g.ud.setObject(token.string, forKey: "Token")
-                g.ud.setObject(grant_type.string, forKey: "Tipo")
+                print(token)
+                let t = token_type.string! + " " + token.string!
+                g.ud.setObject(t, forKey: "Token")
                 g.ud.setObject(userId.double, forKey: "userId")
+                g.db.establecerHeader(t)
                 
-                g.db.establecerHeader(token.string!)
+                let presentingViewController: UIViewController! = self.presentingViewController
                 
+                self.dismissViewControllerAnimated(false) {
+                    // go back to MainMenuView as the eyes of the user
+                    presentingViewController.dismissViewControllerAnimated(true, completion: nil)
+                }
                
+            }
+            else
+            {
+                print(token)
             }
 
             
