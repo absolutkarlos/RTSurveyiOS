@@ -686,9 +686,10 @@
                         <viewControllerLayoutGuide type="bottom" id="IaQ-ra-UmU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dfp-3i-svw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cS6-UF-g06">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cS6-UF-g06">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -707,20 +708,22 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Win-hq-YWF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Win-hq-YWF">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LnP-Td-0Vt"/>
                                 </constraints>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="LnP-Td-0Vt"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <mask key="constraints">
                                         <include reference="LnP-Td-0Vt"/>
                                     </mask>
@@ -730,7 +733,7 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jtr-yh-UQd">
@@ -743,7 +746,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aVZ-My-7Sm"/>
                                 </constraints>
-                                <state key="normal" title="Ingresar"/>
+                                <state key="normal" title="Ingresar">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="aVZ-My-7Sm"/>
@@ -761,6 +766,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="vmj-85-4K9">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="58" y="126" width="284" height="250"/>
+                                </variation>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -796,25 +804,25 @@
                                 <exclude reference="vmj-85-4K9"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="DG5-ds-nrD"/>
-                                <exclude reference="ZEK-HF-wkV"/>
-                                <exclude reference="fV4-YH-ZTx"/>
+                                <exclude reference="wR7-fS-NMs"/>
+                                <exclude reference="1x0-YU-M8k"/>
+                                <exclude reference="abL-rX-yMc"/>
+                                <exclude reference="tSd-5E-P6k"/>
                                 <exclude reference="BBE-Z8-15W"/>
                                 <exclude reference="UGN-br-zna"/>
                                 <exclude reference="o2U-Dp-Pyd"/>
                                 <exclude reference="okU-aQ-9hC"/>
-                                <exclude reference="1x0-YU-M8k"/>
-                                <exclude reference="abL-rX-yMc"/>
-                                <exclude reference="tSd-5E-P6k"/>
-                                <exclude reference="JQe-mH-q7y"/>
-                                <exclude reference="me2-vz-Fz3"/>
-                                <exclude reference="zNF-Yy-lUL"/>
                                 <exclude reference="0La-4q-76g"/>
                                 <exclude reference="Igz-Gw-6dq"/>
                                 <exclude reference="MRa-6Y-6y8"/>
                                 <exclude reference="QOI-Ts-nGF"/>
                                 <exclude reference="y0B-QT-e2u"/>
-                                <exclude reference="wR7-fS-NMs"/>
+                                <exclude reference="JQe-mH-q7y"/>
+                                <exclude reference="me2-vz-Fz3"/>
+                                <exclude reference="zNF-Yy-lUL"/>
+                                <exclude reference="DG5-ds-nrD"/>
+                                <exclude reference="ZEK-HF-wkV"/>
+                                <exclude reference="fV4-YH-ZTx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -827,25 +835,25 @@
                                 <include reference="vmj-85-4K9"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="DG5-ds-nrD"/>
-                                <include reference="ZEK-HF-wkV"/>
-                                <include reference="fV4-YH-ZTx"/>
+                                <include reference="wR7-fS-NMs"/>
+                                <include reference="1x0-YU-M8k"/>
+                                <include reference="abL-rX-yMc"/>
+                                <include reference="tSd-5E-P6k"/>
                                 <include reference="BBE-Z8-15W"/>
                                 <include reference="UGN-br-zna"/>
                                 <include reference="o2U-Dp-Pyd"/>
                                 <include reference="okU-aQ-9hC"/>
-                                <include reference="1x0-YU-M8k"/>
-                                <include reference="abL-rX-yMc"/>
-                                <include reference="tSd-5E-P6k"/>
-                                <include reference="JQe-mH-q7y"/>
-                                <include reference="me2-vz-Fz3"/>
-                                <include reference="zNF-Yy-lUL"/>
                                 <include reference="0La-4q-76g"/>
                                 <include reference="Igz-Gw-6dq"/>
                                 <include reference="MRa-6Y-6y8"/>
                                 <include reference="QOI-Ts-nGF"/>
                                 <include reference="y0B-QT-e2u"/>
-                                <include reference="wR7-fS-NMs"/>
+                                <include reference="JQe-mH-q7y"/>
+                                <include reference="me2-vz-Fz3"/>
+                                <include reference="zNF-Yy-lUL"/>
+                                <include reference="DG5-ds-nrD"/>
+                                <include reference="ZEK-HF-wkV"/>
+                                <include reference="fV4-YH-ZTx"/>
                             </mask>
                         </variation>
                     </view>
@@ -2671,7 +2679,6 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="wT0-tK-msQ" kind="relationship" relationship="rootViewController" id="1Xd-Wb-9f7"/>
-                        <segue destination="r5s-WV-aFZ" kind="show" id="wkM-3O-sfj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pk-0J-Ltu" userLabel="First Responder" sceneMemberID="firstResponder"/>

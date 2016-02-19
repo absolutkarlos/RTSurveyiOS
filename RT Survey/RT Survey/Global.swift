@@ -11,7 +11,7 @@ import Foundation
 class Global {
     
     let aux: Auxiliares!
-    //let db: Network!
+    let db: Network!
     let c : Cache!
     let ud = NSUserDefaults.standardUserDefaults()
     
@@ -26,7 +26,7 @@ class Global {
     init()
     {
         self.aux = Auxiliares()
-        //self.db = Network()
+        self.db = Network()
         self.c = Cache()
     }
 }

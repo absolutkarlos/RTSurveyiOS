@@ -17,21 +17,8 @@ class Network: NSObject {
     var token : String!
     var alamo : Alamofire.Manager?
     
-    var baseURL, login, logout, olvidoPassword, registrar : String!
+    var baseURL, login, logout, action, olvidoPassword : String!
     
-    let url: Url!
-    
-    
-    internal struct Url {
-        var login = "/login"
-        var logout = "/logout"
-        var olvidoPassword = "/olvidoPassword"
-        var registrar = "/signup"
-        var registrarInfo = "/registroInfoPersonal"
-        var subirFotoPerfil = "/subirFotoPerfil"
-        var obtenerFotoPerfil = "/obtenerFotoPerfil"
-        
-    }
     
     override init() {
         let ud = NSUserDefaults.standardUserDefaults()
@@ -40,14 +27,14 @@ class Network: NSObject {
         
         self.alamo = Alamofire.Manager(configuration: configuration)
         
-        url = Url()
-        //baseURL = "http://127.0.0.1:3000/api/v0.0.1"
+        baseURL = "http://rtsurvey.golddata.net/service"
         
         
-        login = "/login"
+        login = "/token"
+        action = "/api/action"
         logout = "/logout"
         olvidoPassword = "/olvidoPassword"
-        registrar = "/signup"
+
         
         
         if (ud.stringForKey("Token") != nil)
@@ -71,21 +58,20 @@ class Network: NSObject {
         header = ["Authorization": h, "Content-Type":"application/json"]
     }
     
-    func llamarConDatos(urlS: String,parametros: [String: AnyObject], callback: (JSON)->Void) {
+    func post(uri: String,parametros: [String: AnyObject], callback: (JSON)->Void)
+    {
+        let url = NSURL(string: baseURL)
         
-        let uri = urlS
-        
-        let url = NSURL(string: baseURL + uri)
-        self.alamo!.request(.POST, url!, headers: header, parameters:parametros, encoding:.JSON).responseJSON { response in
-             /*   if(response.result == nil)
-                {
-                    callback(nil)
-                }
-                else
-                {
-                    let resultado = JSON(response.result)
-                    callback(resultado)
-                }*/
+        self.alamo!.request(.POST, (url?.URLByAppendingPathComponent(uri))!, headers: header, parameters:parametros, encoding:.JSON).responseJSON { response in
+            /*   if(response.result == nil)
+            {
+            callback(nil)
+            }
+            else
+            {
+            let resultado = JSON(response.result)
+            callback(resultado)
+            }*/
             switch response.result {
             case .Success:
                 if let value = response.result.value {
@@ -98,32 +84,105 @@ class Network: NSObject {
         }
     }
     
-    func llamar(urlS: String, callback: (JSON)->Void) {
-        
-        let uri = urlS
-        
+    func put(uri: String,parametros: [String: AnyObject], callback: (JSON)->Void)
+    {
         let url = NSURL(string: baseURL + uri)
-        self.alamo!.request(.POST, url!, headers: header, encoding:.JSON)
-            .responseJSON { response in
-               /* if(response.result == nil)
-                {
-                    callback(nil)
+        self.alamo!.request(.PUT, url!, headers: header, parameters:parametros, encoding:.JSON).responseJSON { response in
+            /*   if(response.result == nil)
+            {
+            callback(nil)
+            }
+            else
+            {
+            let resultado = JSON(response.result)
+            callback(resultado)
+            }*/
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    print("JSON: \(json)")
                 }
-                else
-                {
-                    let resultado = JSON(response.result
-                    callback(resultado)
-                }*/
-                switch response.result {
-                case .Success:
-                    if let value = response.result.value {
-                        let json = JSON(value)
-                        print("JSON: \(json)")
-                    }
-                case .Failure(let error):
-                    print(error)
-                }
+            case .Failure(let error):
+                print(error)
+            }
         }
+    }
+    
+    func delete(uri: String,parametros: [String: AnyObject], callback: (JSON)->Void)
+    {
+        let url = NSURL(string: baseURL + uri)
+        self.alamo!.request(.DELETE, url!, headers: header, parameters:parametros, encoding:.JSON).responseJSON { response in
+            /*   if(response.result == nil)
+            {
+            callback(nil)
+            }
+            else
+            {
+            let resultado = JSON(response.result)
+            callback(resultado)
+            }*/
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    print("JSON: \(json)")
+                }
+            case .Failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func getParametros(uri: String,parametros: [String: AnyObject], callback: (JSON)->Void)
+    {
+        let url = NSURL(string: baseURL + uri)
+        self.alamo!.request(.GET, url!, headers: header, parameters:parametros, encoding:.JSON).responseJSON { response in
+            /*   if(response.result == nil)
+            {
+            callback(nil)
+            }
+            else
+            {
+            let resultado = JSON(response.result)
+            callback(resultado)
+            }*/
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    print("JSON: \(json)")
+                }
+            case .Failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func get(uri: String, callback: (JSON)->Void)
+    {
+        let url = NSURL(string: baseURL)
+        self.alamo?.request(.GET, (url?.URLByAppendingPathComponent(uri))!, headers:header, encoding: .JSON).responseJSON(completionHandler: {
+            response in
+            /*   if(response.result == nil)
+            {
+            callback(nil)
+            }
+            else
+            {
+            let resultado = JSON(response.result)
+            callback(resultado)
+            }*/
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    print("JSON: \(json)")
+                }
+            case .Failure(let error):
+                print(error)
+            }
+        })
     }
     
 }

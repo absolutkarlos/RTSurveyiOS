@@ -12,6 +12,17 @@ class principalTableViewController: UITableViewController {
 
     @IBOutlet var tabla: UITableView!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if (g.ud.stringForKey("Token") == nil)
+        {
+            let login = self.storyboard!.instantiateViewControllerWithIdentifier("login") as! loginViewController
+            self.presentViewController(login, animated: true, completion: nil)
+            //self.navigationController?.pushViewController(login, animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
